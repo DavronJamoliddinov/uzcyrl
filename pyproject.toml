@@ -1,0 +1,43 @@
+[build-system]
+requires = ["hatchling>=1.18"]
+build-backend = "hatchling.build"
+
+[project]
+name = "uzcyrl"
+version = "0.1.0"
+description = "Uzbek Latin ↔ Cyrillic transliteration that restores Russian loanwords (компьютер, сентябрь, цирк)"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.9"
+authors = [{ name = "DavronJamoliddinov" }]
+keywords = ["uzbek", "cyrillic", "latin", "transliteration", "nlp", "oʻzbek", "kirill", "lotin"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Topic :: Text Processing :: Linguistic",
+    "Typing :: Typed",
+]
+dependencies = []
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[project.scripts]
+uzcyrl = "uzcyrl.__main__:main"
+
+[project.urls]
+Homepage = "https://github.com/DavronJamoliddinov/uzcyrl"
+Issues = "https://github.com/DavronJamoliddinov/uzcyrl/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/uzcyrl"]
+
+[tool.hatch.build.targets.sdist]
+include = ["src", "tests", "LICENSES", "README.md", "LICENSE", "CHANGELOG.md"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests", "README.md"]
+addopts = "--doctest-glob=README.md"
