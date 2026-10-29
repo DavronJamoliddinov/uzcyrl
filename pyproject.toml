@@ -8,7 +8,7 @@ version = "0.1.0"
 description = "Uzbek Latin ↔ Cyrillic transliteration that restores Russian loanwords (компьютер, сентябрь, цирк)"
 readme = "README.md"
 license = { file = "LICENSE" }
-requires-python = ">=3.9"
+requires-python = ">=3.10"
 authors = [{ name = "DavronJamoliddinov" }]
 keywords = ["uzbek", "cyrillic", "latin", "transliteration", "nlp", "oʻzbek", "kirill", "lotin"]
 classifiers = [

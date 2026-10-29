@@ -17,7 +17,7 @@ A letter-by-letter converter writes *компютерларда*, *сентаб�
 ь, ц and ъ, so they cannot be restored by rules alone. `uzcyrl` combines the official rules with a table of 728
 loanword stems that also matches words with Uzbek suffixes (*sentabrdan* → *сентябрдан*, *sirkka* → *циркка*).
 
-Zero dependencies, Python 3.9+, MIT license.
+Zero dependencies, Python 3.10+, MIT license.
 
 ## Install
 
